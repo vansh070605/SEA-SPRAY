@@ -105,10 +105,17 @@ body {
     width: 100%;
   }
   .navbar-menu li a {
-    padding: 2rem;
-    width: 100%;
-    display: table;
-    border-bottom: none;
+    border-bottom: none !important;
+    border-left: 4px solid transparent;
+    padding: 1rem 0 1rem 1.5rem;
+    transition: color 0.3s, border-left 0.3s, background 0.3s;
+    background: none;
+  }
+  .navbar-menu li a:hover,
+  .navbar-menu li a.active {
+    border-left: 4px solid #ffb703 !important;
+    color: #ffb703;
+    background: rgba(255, 183, 3, 0.08);
   }
   .navbar-toggle {
     display: flex;

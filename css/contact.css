@@ -116,6 +116,28 @@ body {
   }
 }
 
+@media screen and (max-width: 960px) {
+  .navbar-menu li a {
+    border-bottom: none !important;
+    border-left: 4px solid transparent;
+    padding: 1rem 0 1rem 1.5rem;
+    transition: color 0.3s, border-left 0.3s, background 0.3s;
+    background: none;
+  }
+  .navbar-menu li a:hover,
+  .navbar-menu li a.active {
+    border-left: 4px solid #ffb703 !important;
+    color: #ffb703;
+    background: rgba(255, 183, 3, 0.08);
+  }
+}
+
+.submit-btn i {
+  margin-right: 0.5em;
+  font-size: 1.1em;
+  vertical-align: middle;
+}
+
 
 /* Hero Section */
 .contact-hero {
@@ -158,7 +180,7 @@ body {
 /* Office Cards */
 .contact-info {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.2rem;
   background: #f8fafc;
   border-radius: 16px;
@@ -171,7 +193,7 @@ body {
 
 .office, .contact-details {
   min-width: 0;
-  background: #fff;
+  background: linear-gradient(120deg, #f6f8fa 80%, #e0eafc 100%);
   border-radius: 16px;
   box-shadow: 0 2px 12px rgba(2,48,71,0.10);
   padding: 1.5rem 1.2rem 1.2rem 1.2rem;
@@ -249,9 +271,18 @@ label {
   border-radius: 8px;
   font-size: 1.08rem;
   background: #fff;
-  transition: border 0.2s, box-shadow 0.2s;
+  transition: border 0.2s, box-shadow 0.2s, background 0.2s;
   box-shadow: 0 1px 2px rgba(2,48,71,0.04);
 }
+
+.contact-form input[type="text"]:focus,
+.contact-form input[type="email"]:focus,
+.contact-form textarea:focus {
+  background: #f0f6ff;
+  border: 1.7px solid #2196f3;
+  box-shadow: 0 2px 16px rgba(33,150,243,0.13);
+}
+
 input:focus,
 textarea:focus {
   border: 1.7px solid #ffb703;
@@ -368,4 +399,83 @@ footer {
     max-width: 100%;
     box-sizing: border-box;
   }
+}
+
+@media screen and (max-width: 960px) {
+  .navbar-menu li a {
+    border-bottom: none !important;
+    border-left: 4px solid transparent;
+    padding: 1rem 0 1rem 1.5rem;
+    transition: color 0.3s, border-left 0.3s, background 0.3s;
+    background: none;
+  }
+  .navbar-menu li a:hover,
+  .navbar-menu li a.active {
+    border-left: 4px solid #ffb703 !important;
+    color: #ffb703;
+    background: rgba(255, 183, 3, 0.08);
+  }
+}
+
+.director-section {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0 0 0;
+}
+.director-card {
+  grid-column: 1 / -1; /* Span all columns under the three boxes */
+  background: linear-gradient(120deg, #f6f8fa 80%, #e0eafc 100%);
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(2,48,71,0.10);
+  padding: 1.5rem 2.2rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.director-card h2 {
+  color: #ffb703;
+  font-size: 1.15rem;
+  margin-bottom: 0.7rem;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+}
+.director-card i {
+  color: #2196f3;
+  font-size: 1.2em;
+}
+.director-card p {
+  margin: 0.3rem 0 0 0;
+  font-size: 1.07rem;
+  color: #222;
+  font-weight: bold;
+}
+
+.contact-link {
+  color: #2196f3;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s, text-decoration 0.2s, background 0.2s;
+  border-radius: 4px;
+  padding: 0.1em 0.3em;
+  margin-left: 0.3em;
+  word-break: break-all;
+}
+
+.contact-link:hover,
+.contact-link:focus {
+  color: #fff;
+  background: linear-gradient(90deg, #2196f3 70%, #ffb703 100%);
+  text-decoration: underline;
+  outline: none;
+}
+
+/* Make both director and contact cards span all columns */
+.director-card,
+.contact-details {
+  grid-column: 1 / -1;
 }
