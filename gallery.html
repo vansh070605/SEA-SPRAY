@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Gallery | Seaspray Shipping Company Ltd</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Animate.css for animations -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="css/gallery.css">
+</head>
+<body>
+  <!-- Modern Navbar -->
+  <nav class="navbar animate__animated animate__fadeInDown">
+    <div class="navbar-container">
+      <a href="index.html" class="navbar-logo">Seaspray Ship Co. Ltd.</a>
+      <ul class="navbar-menu" id="navbar-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="fleet.html">Fleet</a></li>
+        <li><a href="gallery.html" class="active">Gallery</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="testimonials.html">Testimonials</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="navbar-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+  </nav>
+
+  <header class="gallery-hero animate__animated animate__fadeIn">
+    <h1 class="animate__animated animate__bounceInDown">Gallery</h1>
+    <p class="animate__animated animate__fadeInUp animate__delay-1s">Explore our fleet, operations, and company moments</p>
+  </header>
+
+  <main class="gallery-content animate__animated animate__fadeInUp">
+    <div class="gallery-grid">
+      <div class="gallery-item animate__animated animate__zoomIn">
+        <img src="../images/gallery-ship1.jpg" alt="Oil Tanker at Sea">
+        <span class="caption animate__animated animate__fadeInUp">Oil Tanker at Sea</span>
+      </div>
+      <div class="gallery-item animate__animated animate__zoomIn animate__delay-1s">
+        <img src="../images/gallery-crew.jpg" alt="Crew Members Onboard">
+        <span class="caption animate__animated animate__fadeInUp animate__delay-1s">Crew Members Onboard</span>
+      </div>
+      <div class="gallery-item animate__animated animate__zoomIn animate__delay-2s">
+        <img src="../images/gallery-port.jpg" alt="Vessel at Port">
+        <span class="caption animate__animated animate__fadeInUp animate__delay-2s">Vessel at Port</span>
+      </div>
+      <div class="gallery-item animate__animated animate__zoomIn animate__delay-3s">
+        <img src="../images/gallery-bridge.jpeg" alt="Bridge Operations">
+        <span class="caption animate__animated animate__fadeInUp animate__delay-3s">Bridge Operations</span>
+      </div>
+      <div class="gallery-item animate__animated animate__zoomIn animate__delay-4s">
+        <img src="../images/gallery-training.webp" alt="Training Session">
+        <span class="caption animate__animated animate__fadeInUp animate__delay-4s">Training Session</span>
+      </div>
+      <div class="gallery-item animate__animated animate__zoomIn animate__delay-5s">
+        <img src="../images/gallery-night.jpg" alt="Night Navigation">
+        <span class="caption animate__animated animate__fadeInUp animate__delay-5s">Night Navigation</span>
+      </div>
+      <!-- Add more images as needed -->
+    </div>
+  </main>
+  <footer class="animate__animated animate__fadeInUp">
+    <p>&copy; 2025 Seaspray Shipping Company Ltd. All rights reserved.</p>
+  </footer>
+
+  <!-- Hamburger Menu Script -->
+  <script>
+    document.getElementById('mobile-menu').onclick = function() {
+      document.getElementById('navbar-menu').classList.toggle('active');
+    };
+  </script>
+</body>
+</html>

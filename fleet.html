@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Our Fleet | Seaspray Shipping Company Ltd</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Animate.css for animations -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="stylesheet" href="css/fleet.css">
+</head>
+<body>
+  <!-- Modern Navbar -->
+  <nav class="navbar animate__animated animate__fadeInDown">
+    <div class="navbar-container">
+      <a href="index.html" class="navbar-logo">Seaspray Ship Co. Ltd.</a>
+      <ul class="navbar-menu" id="navbar-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="fleet.html" class="active">Fleet</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="testimonials.html">Testimonials</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="navbar-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+  </nav>
+
+  <header class="fleet-hero animate__animated animate__fadeIn">
+    <h1 class="animate__animated animate__bounceInDown">Our Fleet</h1>
+    <p class="animate__animated animate__fadeInUp animate__delay-1s">
+      We manage a diverse fleet including Tankers, Bulk Carriers, and Offshore vessels. Our vessels trade globally and are maintained to the highest standards.
+    </p>
+  </header>
+
+  <main class="fleet-content">
+    <!-- Tankers -->
+    <section class="animate__animated animate__fadeInLeft">
+      <h2 class="animate__animated animate__bounceInLeft">Tankers</h2>
+      <div class="fleet-table-container animate__animated animate__zoomIn">
+        <table>
+          <thead>
+            <tr>
+              <th>Vessel Name</th>
+              <th>Type</th>
+              <th>GRT</th>
+              <th>DWT</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>BERENICE PRIDE</td><td>OIL PRODUCTS TANKER</td><td>39085</td><td>68467t</td></tr>
+            <!-- ... all other tanker rows ... -->
+            <tr><td>Lady Yasoo</td><td>OIL/CHEMICAL TANKER</td><td>8473</td><td>11932t</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Bulk Carriers -->
+    <section class="animate__animated animate__fadeInRight animate__delay-1s">
+      <h2 class="animate__animated animate__bounceInRight">Bulk Carriers</h2>
+      <div class="fleet-table-container animate__animated animate__zoomIn animate__delay-1s">
+        <table>
+          <thead>
+            <tr>
+              <th>Vessel Name</th>
+              <th>Type</th>
+              <th>GRT</th>
+              <th>DWT</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>MERLIN</td><td>BULK CARRIER</td><td>27980</td><td>50296t</td></tr>
+            <tr><td>HAYKAL</td><td>BULK CARRIER</td><td>38639</td><td>69999t</td></tr>
+            <tr><td>ZEIN</td><td>BULK CARRIER</td><td>38364</td><td>78726t</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Offshore, Cargo & Support Vessels -->
+    <section class="animate__animated animate__fadeInLeft animate__delay-2s">
+      <h2 class="animate__animated animate__bounceInLeft">Offshore, Cargo & Support Vessels</h2>
+      <div class="fleet-table-container animate__animated animate__zoomIn animate__delay-2s">
+        <table>
+          <thead>
+            <tr>
+              <th>Vessel Name</th>
+              <th>Type</th>
+              <th>GRT</th>
+              <th>DWT</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>NORTHER GENESIS</td><td>SUPPLY VESSEL</td><td>1600</td><td>3060t</td></tr>
+            <!-- ... all other offshore rows ... -->
+            <tr><td>KANNON STAR</td><td>GENERAL CARGO SHIP</td><td>481</td><td>470t</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer class="animate__animated animate__fadeInUp">
+    <p>&copy; 2025 Seaspray Shipping Company Ltd. All rights reserved.</p>
+  </footer>
+
+  <!-- Hamburger Menu Script -->
+  <script>
+    document.getElementById('mobile-menu').onclick = function() {
+      document.getElementById('navbar-menu').classList.toggle('active');
+    };
+  </script>
+</body>
+</html>
