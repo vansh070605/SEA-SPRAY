@@ -352,3 +352,20 @@ footer {
     border-left: 0;
   }
 }
+
+@media (max-width: 600px) {
+  .contact-form-section {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box;
+    margin: 0; /* Remove any horizontal margin */
+    padding: 1rem 0.4rem;
+  }
+  .contact-form input[type="text"],
+  .contact-form input[type="email"],
+  .contact-form textarea {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+}
