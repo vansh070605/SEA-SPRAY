@@ -36,7 +36,7 @@ body {
   display: flex;
   align-items: center;
   text-decoration: none;
-  color: #ffb703;
+  color: blue;
   font-size: 1.8rem;
   font-weight: bold;
   letter-spacing: 2px;
@@ -54,7 +54,7 @@ body {
 }
 
 .navbar-company-name {
-  color: #ffb703;
+  color: blue;
   font-size: 1.25rem;
   font-weight: bold;
   letter-spacing: 2px;
@@ -125,7 +125,7 @@ body {
     left: 0;
     opacity: 0;
     transition: all 0.5s;
-    background: #023047;
+    background: white;
     overflow: hidden;
     z-index: 998;
   }
