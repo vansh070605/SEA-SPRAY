@@ -31,16 +31,43 @@ body {
   padding: 0 24px;
 }
 .navbar-logo {
-  color: blue;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #ffb703;
   font-size: 1.8rem;
   font-weight: bold;
-  text-decoration: none;
   letter-spacing: 2px;
   transition: color 0.3s;
 }
 .navbar-logo:hover {
   color: blue;
 }
+
+
+.navbar-logo-img {
+  height: 40px;        /* Adjust as needed */
+  width: 40px;         /* Adjust as needed */
+  margin-right: 0.7em; /* Space between logo and text */
+  border-radius: 50%;  /* Optional: makes the logo round */
+  border: 2px solid #023047; /* Optional: subtle border */
+  background: #fff;    /* Optional: white background for logo */
+  object-fit: contain;
+}
+
+.navbar-company-name {
+  color: #ffb703;
+  font-size: 1.25rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  vertical-align: middle;
+}
+
+.navbar-logo:hover .navbar-company-name {
+  color: #ffd166;
+}
+
+
 .navbar-menu {
   display: flex;
   align-items: center;
