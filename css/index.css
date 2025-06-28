@@ -12,7 +12,7 @@ body {
 /* Modern Navbar Styles */
 /* Modern Navbar Styles */
 .navbar {
-  background: #023047;
+  background: white;
   height: 60px;
   display: flex;
   justify-content: center;
@@ -33,7 +33,7 @@ body {
   padding: 0 24px;
 }
 .navbar-logo {
-  color: #ffb703;
+  color: blue;
   font-size: 1.8rem;
   font-weight: bold;
   text-decoration: none;
@@ -41,7 +41,7 @@ body {
   transition: color 0.3s;
 }
 .navbar-logo:hover {
-  color: #ffd166;
+  color: blue;
 }
 .navbar-menu {
   display: flex;
@@ -54,7 +54,7 @@ body {
   height: 60px;
 }
 .navbar-menu li a {
-  color: #fff;
+  color: black;
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -68,8 +68,8 @@ body {
 }
 .navbar-menu li a:hover,
 .navbar-menu li a.active {
-  color: #ffb703;
-  border-bottom: 3px solid #ffb703;
+  color: blue;
+  border-bottom: 3px solid blue;
 }
 .navbar-toggle {
   display: none;
@@ -79,11 +79,16 @@ body {
 .bar {
   height: 3px;
   width: 25px;
-  background-color: #fff;
+  background-color: #000;
   margin: 4px 0;
   border-radius: 2px;
   transition: all 0.3s;
 }
+
+.navbar-toggle.active .bar {
+  background-color: #000; /* or any color you prefer */
+}
+
 /* Responsive Navbar */
 @media screen and (max-width: 960px) {
   .navbar-menu {
